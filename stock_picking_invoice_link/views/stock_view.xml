@@ -31,14 +31,10 @@
                     name="invoice_line"
                     string="Invoice Lines"
                     colspan="2"
+                    groups="account.group_account_invoice"
                     attrs="{'invisible':[('invoice_line_ids', '=', [])]}"
                 >
-                    <field
-                        name="invoice_line_ids"
-                        nolabel="1"
-                        groups="account.group_account_invoice"
-                        widget="one2many_list"
-                    />
+                    <field name="invoice_line_ids" nolabel="1" widget="one2many_list" />
                 </group>
             </group>
         </field>
@@ -52,14 +48,10 @@
                 <group
                     name="invoice_line"
                     string="Invoice Lines"
+                    groups="account.group_account_invoice"
                     attrs="{'invisible':[('invoice_line_ids', '=', [])]}"
                 >
-                    <field
-                        name="invoice_line_ids"
-                        nolabel="1"
-                        groups="account.group_account_invoice"
-                        widget="one2many_list"
-                    />
+                    <field name="invoice_line_ids" nolabel="1" widget="one2many_list" />
                 </group>
             </group>
         </field>
